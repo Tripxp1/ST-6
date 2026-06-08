@@ -10,7 +10,8 @@
   <name>grid-session-lab</name>
 
   <properties>
-    <maven.compiler.release>8</maven.compiler.release>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.jupiter.version>5.10.3</junit.jupiter.version>
     <surefire.plugin.version>3.3.0</surefire.plugin.version>
@@ -33,7 +34,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.12.1</version>
         <configuration>
-          <release>${maven.compiler.release}</release>
+          <source>${maven.compiler.source}</source>
+          <target>${maven.compiler.target}</target>
         </configuration>
       </plugin>
       <plugin>
